@@ -2,16 +2,13 @@ import React, { useState, useEffect } from "react";
 import Course from "../course/Course";
 import HeroSection from "../heroSection/HeroSection";
 
-function Home() {
-  const [courses, setCourses] = useState([]);
+function Home({ courses }) {
+  const [first6, setFirst6] = useState([]);
   useEffect(() => {
-    fetch("./db.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const first6 = data.slice(0, 6);
-        setCourses(first6);
-      });
-  }, []);
+    const newCourse = courses.slice(0, 6);
+    setFirst6(newCourse);
+  }, [first6]);
+
   return (
     <section>
       <HeroSection />
@@ -24,7 +21,7 @@ function Home() {
           </p>
         </article>
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {courses.map((course) => (
+          {first6.map((course) => (
             <Course course={course} />
           ))}
         </section>

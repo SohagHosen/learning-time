@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { RiMenu3Line } from "react-icons/ri";
 
 import logo from "../../assets/image/logo.png";
@@ -7,14 +7,16 @@ function Nav() {
   const [toggle, setToggle] = useState(false);
   console.log(toggle);
   return (
-    <header style={{ backgroundColor: "#18a7a4" }}>
+    <header style={{ backgroundColor: "#00D3CE" }}>
       <nav className="flex items-center justify-between flex-wrap  p-3 container mx-auto">
-        <div className="flex items-center  text-white mr-6 ">
-          <img className="h-10" src={logo} alt="" />
-          <span className="font-semibold text-2xl tracking-tight">
-            Learning Time
-          </span>
-        </div>
+        <Link to="/">
+          <div className="flex items-center  text-white mr-6 ">
+            <img className="h-10" src={logo} alt="" />
+            <span className="font-semibold text-2xl tracking-tight">
+              Learning Time
+            </span>
+          </div>
+        </Link>
         <div className="block md:hidden">
           <button
             onClick={() => setToggle(!toggle)}
@@ -39,7 +41,7 @@ function Nav() {
               to="/about"
               className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-200 mr-4"
             >
-              About
+              About US
             </NavLink>
             <NavLink
               to="/services"
