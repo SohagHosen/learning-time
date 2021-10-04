@@ -13,8 +13,10 @@ function Home({ courses }) {
     <section>
       <HeroSection />
       <section className="container mx-auto">
-        <article className="text-center my-10">
-          <h3 className="text-5xl font-bold">Always something new to learn</h3>
+        <article className="text-center my-10 px-5 md:px0">
+          <h3 className="text-3xl md:text-5xl font-bold">
+            Always something new to learn
+          </h3>
           <p className="text-lg mt-5">
             With courses added regularly to our catalog, you always get the
             latest skills.

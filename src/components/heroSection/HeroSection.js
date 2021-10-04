@@ -6,7 +6,10 @@ function HeroSection() {
       <section className="flex items-center justify-center md:w-1/2">
         <article className="w-3/4">
           <p className="lg:text-lg mt-4">
-            <span className="font-bold text-5xl" style={{ color: "#00D3CE" }}>
+            <span
+              className="font-bold text-3xl md:text-5xl"
+              style={{ color: "#00D3CE" }}
+            >
               Learning Time
             </span>
             <br /> isn’t just a place to take classes that are like college

@@ -9,16 +9,18 @@ function Contact() {
     <div className="container mx-auto grid grid-cols-1  md:grid-cols-2 gap-4 my-10">
       <section className="flex justify-center items-center">
         <article>
-          <h3 className="text-3xl">Connecting people with knowledge</h3>
+          <h3 className="text-3xl text-center">
+            Connecting people with knowledge
+          </h3>
           <p className="flex justify-center items-center text-lg">
             <HiLocationMarker /> Savar, Dhaka
           </p>
           <p className="flex justify-center items-center text-lg">
             <MdOutlineEmail /> learning.time@example.com
-          </p>{" "}
+          </p>
           <p className="flex justify-center items-center text-lg">
             <BsFillTelephoneFill /> +880195151111
-          </p>{" "}
+          </p>
           <p className="flex justify-center items-center text-lg">
             <CgWebsite /> www.learning-time.com
           </p>

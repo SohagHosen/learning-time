@@ -7,7 +7,7 @@ import Course from "../course/Course";
 function Services({ courses }) {
   return (
     <section className="container mx-auto text-center my-10">
-      <h4 className="text-5xl font-bold">Our Services</h4>
+      <h4 className="text-3xl md:text-5xl font-bold">Our Services</h4>
       <p>We provide the best teachers for our students.</p>
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <Service
@@ -23,11 +23,11 @@ function Services({ courses }) {
         <Service
           img={desk}
           title="Desktop development Courses"
-          description="Desktop development implies the creation of software applications that perform on computers"
+          description="Desktop development implies the creation of software applications that perform perform on computers"
         />
       </section>
       <article className="my-10">
-        <h4 className="text-5xl font-bold py-5">Our Courses</h4>
+        <h4 className="text-3xl md:text-5xl font-bold py-5">Our Courses</h4>
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {courses.map((course) => (
             <Course course={course} />

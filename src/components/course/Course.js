@@ -3,7 +3,7 @@ import React from "react";
 function Course({ course }) {
   const { name, img, language, instructor } = course;
   return (
-    <section className=" text-gray-900">
+    <section className="text-gray-900 p-5">
       <img
         src={img}
         alt={name}

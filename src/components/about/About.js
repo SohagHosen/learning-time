@@ -7,7 +7,7 @@ function About() {
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
         <article className="flex justify-center items-center">
           <div>
-            <h2 className="text-5xl font-bold">
+            <h2 className="text-3xl md:text-5xl font-bold">
               We share knowledge with the world
             </h2>
             <p className="text-md mt-5">
